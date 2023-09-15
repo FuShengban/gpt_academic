@@ -398,6 +398,7 @@ if "spark" in AVAIL_LLM_MODELS:   # 讯飞星火认知大模型
         })
     except:
         print(trimmed_format_exc())
+<<<<<<< Updated upstream
 if "sparkv2" in AVAIL_LLM_MODELS:   # 讯飞星火认知大模型
     try:
         from .bridge_spark import predict_no_ui_long_connection as spark_noui
@@ -414,6 +415,8 @@ if "sparkv2" in AVAIL_LLM_MODELS:   # 讯飞星火认知大模型
         })
     except:
         print(trimmed_format_exc())
+=======
+>>>>>>> Stashed changes
 if "llama2" in AVAIL_LLM_MODELS:   # llama2
     try:
         from .bridge_llama2 import predict_no_ui_long_connection as llama2_noui
