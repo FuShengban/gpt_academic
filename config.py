@@ -79,15 +79,10 @@ DEFAULT_FN_GROUPS = ['对话', '编程', '学术']
 
 # 模型选择是 (注意: LLM_MODEL是默认选中的模型, 它*必须*被包含在AVAIL_LLM_MODELS列表中 )
 LLM_MODEL = "gpt-3.5-turbo" # 可选 ↓↓↓
-<<<<<<< Updated upstream
 AVAIL_LLM_MODELS = ["gpt-3.5-turbo-16k", "gpt-3.5-turbo", "azure-gpt-3.5", "api2d-gpt-3.5-turbo", 
                     "gpt-4", "api2d-gpt-4", "chatglm", "moss", "newbing", "stack-claude"]
 # P.S. 其他可用的模型还包括 ["qianfan", "llama2", "qwen", "gpt-3.5-turbo-0613", "gpt-3.5-turbo-16k-0613", 
 # "spark", "sparkv2", "chatglm_onnx", "claude-1-100k", "claude-2", "internlm", "jittorllms_pangualpha", "jittorllms_llama"]
-=======
-AVAIL_LLM_MODELS = ["gpt-3.5-turbo-16k", "gpt-3.5-turbo", "azure-gpt-3.5", "api2d-gpt-3.5-turbo", "gpt-4", "api2d-gpt-4", "chatglm", "moss", "newbing", "stack-claude"]
-# P.S. 其他可用的模型还包括 ["qianfan", "llama2", "qwen", "gpt-3.5-turbo-0613", "gpt-3.5-turbo-16k-0613", "spark", "chatglm_onnx", "claude-1-100k", "claude-2", "internlm", "jittorllms_rwkv", "jittorllms_pangualpha", "jittorllms_llama"]
->>>>>>> Stashed changes
 
 
 # 百度千帆（LLM_MODEL="qianfan"）
@@ -97,11 +92,7 @@ BAIDU_CLOUD_QIANFAN_MODEL = 'ERNIE-Bot'    # 可选 "ERNIE-Bot"(文心一言), "
 
 
 # 如果使用ChatGLM2微调模型，请把 LLM_MODEL="chatglmft"，并在此处指定模型路径
-<<<<<<< Updated upstream
 CHATGLM_PTUNING_CHECKPOINT = "" # 例如"/home/hmp/ChatGLM2-6B/ptuning/output/6b-pt-128-1e-2/checkpoint-100"
-=======
-ChatGLM_PTUNING_CHECKPOINT = "" # 例如"/home/hmp/ChatGLM2-6B/ptuning/output/6b-pt-128-1e-2/checkpoint-100"
->>>>>>> Stashed changes
 
 
 # 本地LLM模型如ChatGLM的执行方式 CPU/GPU
@@ -178,7 +169,6 @@ CUSTOM_API_KEY_PATTERN = ""
 HUGGINGFACE_ACCESS_TOKEN = "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"
 
 
-<<<<<<< Updated upstream
 # GROBID服务器地址（填写多个可以均衡负载），用于高质量地读取PDF文档
 # 获取方法：复制以下空间https://huggingface.co/spaces/qingxu98/grobid，设为public，然后GROBID_URL = "https://(你的hf用户名如qingxu98)-(你的填写的空间名如grobid).hf.space"
 GROBID_URLS = [
@@ -193,8 +183,6 @@ ALLOW_RESET_CONFIG = False
 PATH_PRIVATE_UPLOAD = "private_upload"
 # 日志文件夹的位置，请勿修改
 PATH_LOGGING = "gpt_log"
-=======
->>>>>>> Stashed changes
 
 """
 在线大模型配置关联关系示意图
@@ -212,11 +200,7 @@ PATH_LOGGING = "gpt_log"
 │   ├── AZURE_ENGINE
 │   └── API_URL_REDIRECT
 │
-<<<<<<< Updated upstream
 ├── "spark" 星火认知大模型 spark & sparkv2
-=======
-├── "spark" 星火认知大模型
->>>>>>> Stashed changes
 │   ├── XFYUN_APPID
 │   ├── XFYUN_API_SECRET
 │   └── XFYUN_API_KEY
@@ -237,7 +221,6 @@ PATH_LOGGING = "gpt_log"
     ├── NEWBING_STYLE
     └── NEWBING_COOKIES
 
-<<<<<<< Updated upstream
     
 用户图形界面布局依赖关系示意图
 │
@@ -250,14 +233,11 @@ PATH_LOGGING = "gpt_log"
 ├── AUTO_CLEAR_TXT 是否在提交时自动清空输入框
 ├── ADD_WAIFU 加一个live2d装饰
 ├── ALLOW_RESET_CONFIG 是否允许通过自然语言描述修改本页的配置，该功能具有一定的危险性
-=======
->>>>>>> Stashed changes
 
 
 插件在线服务配置依赖关系示意图
 │
 ├── 语音功能
-<<<<<<< Updated upstream
 │   ├── ENABLE_AUDIO
 │   ├── ALIYUN_TOKEN
 │   ├── ALIYUN_APPKEY
@@ -268,11 +248,3 @@ PATH_LOGGING = "gpt_log"
 │   └── GROBID_URLS
 
 """
-=======
-    ├── ENABLE_AUDIO
-    ├── ALIYUN_TOKEN
-    ├── ALIYUN_APPKEY
-    ├── ALIYUN_ACCESSKEY
-    └── ALIYUN_SECRET
-"""
->>>>>>> Stashed changes
